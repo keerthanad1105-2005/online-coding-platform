@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Coding Platform</title>
+</head>
+<body>
+    <h2>Welcome {{ user }}</h2>
+    <a href="/logout">Logout</a>
+
+    <form method="POST">
+        <textarea name="code" rows="15" cols="80"></textarea><br>
+        <button type="submit">Run Code</button>
+    </form>
+
+    <h3>Output:</h3>
+    <pre>{{ output }}</pre>
+
+    <h3>Plagiarism Similarity: {{ similarity }}%</h3>
+</body>
+</html>
